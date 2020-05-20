@@ -39,6 +39,8 @@ if __name__ == "__main__":
         Agent = agent.Agent(env)
     elif (len(sys.argv) == 3):
         Agent = agent.Agent(env, sys.argv[2])
+    else:
+        print("usage:python brain.py [训练回合数] [(可选)已有的q表文件]")
     print("初始化完成：\n", "训练回合数=", episodes)
     sys.stdout.flush()
     # with tqdm(total=env.x_count*env.y_count*episodes) as pbar:

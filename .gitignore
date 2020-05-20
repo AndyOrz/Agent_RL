@@ -1,3 +1,6 @@
+# log files
+log-*.txt
+
 # numpy files
 *.npy
 
