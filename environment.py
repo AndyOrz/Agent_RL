@@ -127,7 +127,7 @@ class Environment():
             taking_rate = 0
         else:
             taking_rate = 2 / V
-        P = 1 - math.exp(-taking_rate * D * (1 - taking_rate * Su))
+        P = 1 - math.exp(-taking_rate * D / (1 + taking_rate * Su))
         random = np.random.rand()
         if (P >= random):
             method = "Pick"
